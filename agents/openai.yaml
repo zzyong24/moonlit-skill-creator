@@ -1,0 +1,5 @@
+interface:
+  display_name: "月明·Skill 设计师"
+  short_description: "创建和审查可复用技能，理清能力边界、依赖与失败恢复，支持迁移与分发"
+  brand_color: "#39EC88"
+  default_prompt: "使用 $moonlit-skill-creator 审查这个 Skill 的职责和依赖，在授权范围内整改并验证。"
