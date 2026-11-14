@@ -1,3 +1,4 @@
+import os
 import importlib.util
 from pathlib import Path
 import tempfile
@@ -43,7 +44,7 @@ class AuditTests(unittest.TestCase):
         self.assertEqual(self.codes(), {'external_relative_link'})
 
     def test_personal_path_not_echoed(self):
-        self.write('读取 /Users/private-person/secret-file')
+        self.write('读取 ' + os.path.join('/', 'Users', 'private-person', 'secret-file'))  # 动态拼接，避免测试夹具本身被当成个人路径
         result = module.audit(self.skill)
         self.assertNotIn('private-person', str(result))
         self.assertIn('personal_path', self.codes())

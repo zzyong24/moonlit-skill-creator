@@ -1,6 +1,6 @@
 ---
 name: moonlit-skill-creator
-description: 创建、审查或重构自有 Skill，提炼项目里的可复用能力，解决职责混杂、隐式依赖、难迁移和失败恢复问题；不接管普通内容制作或未授权发布。
+description: "创建、审查或重构自有 Skill，提炼项目里的可复用能力，解决职责混杂、隐式依赖、难迁移和失败恢复问题。用户要新建 Skill、把项目经验沉淀成 Skill、审查或重构已有 Skill 时使用。不做普通内容制作，也不发布；批量筛选整个技能库用 skill-audit。"
 ---
 
 # 月明·Skill 设计师
