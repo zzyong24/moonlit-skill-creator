@@ -4,9 +4,9 @@
 
 ## 名称与权威来源
 
-- 技术名称使用 `moonlit-<capability>`。Skill 目录名、`SKILL.md` frontmatter `name`、GitHub 仓库名、README 安装目录和评估配置中的 `skill_name` 完全一致。
+- 技术名称默认使用 `moonlit-<capability>`；用户明确指定保留原名的自有 fork（如独立维护的上游衍生 Skill）沿用指定名称，不强改前缀。无论哪种命名，Skill 目录名、`SKILL.md` frontmatter `name`、GitHub 仓库名、README 安装目录和评估配置中的 `skill_name` 必须完全一致。
 - 面向人的中文名称使用“月明·<能力名称>”。`agents/openai.yaml` 的 `display_name`、README 标题和导航用同一名称；描述准确说清能力，不把旧引擎或弃用流程包装成当前 Skill。
-- 所有月明 Skill 的 canonical source 集中在 `moonlit-skills/skills/moonlit-*/`。项目运行快照、用户安装入口和独立 GitHub 仓库都是派生副本，不各自成为第二份维护源。
+- 旧合集 `zzyong24/moonlit-skills` 已于 2026-11-17 归档；已核验的独立仓库是对应 Skill 的维护与安装入口。项目运行快照及发现链接仍需按项目 pin 管理，本机旧目录保留，不再向旧合集同步。
 - 独立仓库只发布一个 Skill。目录结构清楚、能从仓库根目录使用；携带适用的 `SKILL.md`、README、许可证、必要脚本/资源和评估样例。README 中的仓库 URL、相对链接和安装路径必须指向新名称。
 - 创建或公开仓库只能在用户明确授权后进行。准备分发可以先完成本地审查和交付文件，不编造远程地址，也不把过往授权理解为未来发布许可。
 
@@ -26,6 +26,6 @@
 2. README 首图位于 `assets/readme/hero.png`，尺寸是 1774 × 887 的不透明 PNG，呈现统一品牌视觉和独立功能场景。
 3. 首次安装、依赖、运行示例、限制、许可证和本地相对链接有效；不含本机路径、密钥、Cookie、登录态、运行输出或私人资料。
 4. `SKILL.md` 的前置元数据和 `agents/openai.yaml` 命名准确，评估用例对应当前 Skill。
-5. 从 canonical source 复制/同步后的差异可解释；发布后记录仓库 URL 和提交版本，后续修改仍先回到 canonical source。
+5. 核实对应独立仓库及本地工作树，解释安装快照与维护版本差异；发布后记录仓库 URL 和提交版本，不再回写已归档合集。
 
 品牌图生成或重做时使用 imagegen Skill，提供已发布月明 Skill 首图作为风格参考，并给出独立场景描述。验收视觉结果后再写入正式资产路径；不要因为仓库即将发布而省略图像审看。
